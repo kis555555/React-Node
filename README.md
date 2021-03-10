@@ -1,3 +1,7 @@
+# React - Node.js 연동파일
+React와 Node.js를 연동하고나서, React에서 Node로, Node에서 React로 데이터를 주고받는 코드까지
+작성했습니다.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
