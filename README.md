@@ -1,4 +1,4 @@
-# React - Node.js 연동파일
+# React - Node.js 연동
 React와 Node.js를 연동하고나서, React에서 Node로, Node에서 React로 데이터를 주고받는 코드까지
 작성했습니다.
 
