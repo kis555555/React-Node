@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './App.css';
+import test from './testlog.json';
+
 class App extends Component {
 
   state = {
@@ -48,7 +50,8 @@ class App extends Component {
         <button onClick = {this.getServerData}>server get</button>
         <h1>{this.state.id}</h1>
         <h2>{this.state.name}</h2>
-
+        <p>깃에서 불러온 commit hash : {test.commit}</p>
+        <p>깃에서 불러온 author : {test.author}</p>
         <button onClick = {this.submitId}>Submit</button>
 
       </div>

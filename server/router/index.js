@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
+
 const {execSync} = require('child_process')
-const cmd = `git log --pretty=format:'{%n  "commit": "%H",%n%n},'`
+const cmd = `git log -1 --pretty=format:{%n^"""^commit^"""^:^"""^%H^""",^%n^"""^author^"""^:^"""^%an^"""^%n^} > testlog.json`;
 const commitlog = execSync(cmd, {encoding: 'utf8'})
 console.log(commitlog)
 
